@@ -9,31 +9,52 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = UIColor.white
-
         
+        //Accessing the Text Attributes
         let myFirstLabel  = UILabel()
-        myFirstLabel.text = "I made a label on the screen #toogood4you"
-        //myFirstLabel.font = UIFont(name: "MarkerFelt-Thin", size: 45)
-        myFirstLabel.textColor = UIColor.blue
-        myFirstLabel.textAlignment = .center
-        myFirstLabel.numberOfLines = 5
-        //myFirstLabel.frame = CGRect(origin: CGPoint(x: 10,y :10), size: CGSize(width: 300, height: 500))
+        myFirstLabel.text = "I made a label on the screenI made a label on the screen"
+        myFirstLabel.textColor = UIColor.white
+        myFirstLabel.backgroundColor = UIColor.gray
+        //myFirstLabel.attributedText = nil
+        myFirstLabel.font = UIFont(name: "Halvetica", size: 20)
+        myFirstLabel.textAlignment = .left
+        myFirstLabel.lineBreakMode = .byCharWrapping
+        myFirstLabel.lineBreakMode = .byWordWrapping
+        myFirstLabel.isEnabled = true
         
-        //myFirstLabel.frame = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
-        //myFirstLabel.frame = CGRect(X:15, Y:-50, width: 300, height: 500)
+        //Sizing the label's Text
+        myFirstLabel.adjustsFontSizeToFitWidth = true
+        myFirstLabel.allowsDefaultTighteningForTruncation = true
+        myFirstLabel.baselineAdjustment = UIBaselineAdjustment.alignCenters
+        myFirstLabel.minimumScaleFactor = 0.1
+        myFirstLabel.numberOfLines = 2
         
-        myFirstLabel.frame =  CGRect(x: 15, y: 50, width: 300, height: 500)
+        //Managing Highlight Values
+        myFirstLabel.highlightedTextColor = UIColor.blue
+        myFirstLabel.isHighlighted = true
+        
+        //Drawing a Shadow
+        myFirstLabel.shadowColor = UIColor.red
+        myFirstLabel.isHighlighted = true
+        
+        //Drawing and Positining Overrides
+        
+        
+        
+        
+        
+        myFirstLabel.frame =  CGRect(x: 15, y: 150, width: 400, height: 50)
         self.view.addSubview(myFirstLabel)
         
         
     }
-
-
+    
+    
 }
 
