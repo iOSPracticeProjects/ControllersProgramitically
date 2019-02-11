@@ -44,17 +44,29 @@ class ViewController: UIViewController {
         myFirstLabel.isHighlighted = true
         
         //Drawing and Positining Overrides
-        
-        
-        
-        
+  
         
         myFirstLabel.frame =  CGRect(x: 15, y: 150, width: 400, height: 50)
         self.view.addSubview(myFirstLabel)
         
         
+        //UIbutton
+        let myfirstButton = UIButton()
+        myfirstButton.setTitle("Button", for: .normal)
+        myfirstButton.setTitleColor(UIColor.blue, for: .normal)
+        myfirstButton.frame = CGRect(x: 15, y: 250, width: 400, height: 50)
+        
+        myfirstButton.addTarget(self, action: #selector(ViewController.buttonClicked), for: .touchUpInside)
+        self.view.addSubview(myfirstButton)
+        
+        
+        
     }
     
+    @objc func buttonClicked(){
+
+        print("Button clicked")
+    }
     
 }
 
