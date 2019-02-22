@@ -14,11 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.white
-        
+//        self.view.backgroundColor = UIColor.white
+//        
         //Accessing the Text Attributes
         let myFirstLabel  = UILabel()
-        myFirstLabel.text = "I made a label on the screenI made a label on the screen"
+        myFirstLabel.text = "I made a label on the screen"
         myFirstLabel.textColor = UIColor.white
         myFirstLabel.backgroundColor = UIColor.gray
         //myFirstLabel.attributedText = nil
@@ -66,7 +66,15 @@ class ViewController: UIViewController {
     @objc func buttonClicked(){
 
         print("Button clicked")
+        
+       
+//        if let nextVC = UITableView.self{
+//
+//            self.navigationController.presentedViewController(nextVC, dismiss(animated: true, completion: nil))
+     
+        
     }
-    
+
+  
 }
 
